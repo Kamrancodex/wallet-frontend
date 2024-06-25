@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/InputField";
 import { signup } from "../api";
 import { useState } from "react";
-import ToastNotification from "@/components/ToastNotification";
+import ToastNotification from "../components/ToastNotification";
 
 function SignUp() {
   const messages = [

@@ -15,7 +15,7 @@ import {
   updatePassword,
   uploadProfilePic,
 } from "../api"; // Import API functions
-import ToastNotification from "@/components/ToastNotification";
+import ToastNotification from "../components/ToastNotification";
 
 function Profile() {
   const messages = [

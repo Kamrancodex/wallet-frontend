@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/InputField";
 import { signin } from "../api";
 import { useAuth } from "../contexts/AuthContext";
-import ToastNotification from "@/components/ToastNotification";
+import ToastNotification from "../components/ToastNotification";
 
 function SignIn() {
   const messages = [
