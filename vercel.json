@@ -12,7 +12,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://backend-wallet-gd8y.onrender.com/api/$1"
+      "destination": "https://backend-wallet-v1xl.onrender.com"
     },
     {
       "source": "/(.*)",
