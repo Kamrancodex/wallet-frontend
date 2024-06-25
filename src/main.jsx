@@ -20,6 +20,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import "./index.css";
 import { jwtDecode } from "jwt-decode";
 import { AuthProvider } from "./contexts/AuthContext";
+import Verify from "./pages/Verify";
 
 const isAuthenticated = () => {
   const token = localStorage.getItem("token");
@@ -87,6 +88,15 @@ const App = () => (
         element={
           <ProtectedRoute
             element={<Transactions />}
+            isAuthenticated={isAuthenticated()}
+          />
+        }
+      />
+      <Route
+        path="/verify"
+        element={
+          <ProtectedRoute
+            element={<Verify />}
             isAuthenticated={isAuthenticated()}
           />
         }
