@@ -7,9 +7,11 @@ import ToastNotification from "../components/ToastNotification";
 
 function Home() {
   const messages = [
+    "Project made by Kamran",
     "Tazeem just sent 200$ to Irfan💸",
     "Rohit just registered with us✔️",
     "Akshay became our 100th user 😍",
+    "Contact at X username kamran11011",
   ];
 
   return (

@@ -33,7 +33,7 @@ function HeroSection() {
         <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
           <div className="bg-white text-black p-8 rounded-lg shadow-lg w-full max-w-md">
             <h2 className="text-2xl font-bold mb-6 text-center">
-              Transfer Money With TransWi
+              Transfer Money With pay.Me
             </h2>
             <form>
               <div className="mb-4">

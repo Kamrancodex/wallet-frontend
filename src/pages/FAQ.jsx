@@ -6,7 +6,7 @@ function FAQ() {
     <div className="min-h-screen flex flex-col bg-gradient-to-r from-[#010813] via-[#010813] to-gray-900 text-white">
       <header className="bg-[#010813] text-white py-4 px-8 flex justify-between items-center">
         <div className="text-2xl font-bold text-green-400">
-          <Link to="/">TransWi</Link>
+          <Link to="/">pay.Me</Link>
         </div>
         <nav className="hidden md:flex space-x-6">
           <Link to="/signup" className="hover:text-green-400">
@@ -45,7 +45,7 @@ function FAQ() {
             <div>
               <h2 className="text-2xl font-semibold mb-2">What is TransWi?</h2>
               <p className="text-lg">
-                TransWi is a digital wallet service that allows you to send and
+                pay.Me is a digital wallet service that allows you to send and
                 receive money securely and efficiently. Whether you are an
                 individual or a business, our platform is designed to make
                 financial transactions simple and convenient.
@@ -56,16 +56,14 @@ function FAQ() {
                 How do I create an account?
               </h2>
               <p className="text-lg">
-                Creating an account with TransWi is easy. Simply click on the
+                Creating an account with pay.Me is easy. Simply click on the
                 "Register now" button on the top right corner of the page and
                 fill out the registration form. You'll need to provide some
                 basic information and verify your email address.
               </p>
             </div>
             <div>
-              <h2 className="text-2xl font-semibold mb-2">
-                Is TransWi secure?
-              </h2>
+              <h2 className="text-2xl font-semibold mb-2">Is pay.Me secure?</h2>
               <p className="text-lg">
                 Yes, security is our top priority. We use advanced encryption
                 and security protocols to protect your data and transactions.
@@ -75,13 +73,12 @@ function FAQ() {
             </div>
             <div>
               <h2 className="text-2xl font-semibold mb-2">
-                Can I use TransWi for business transactions?
+                Can I use pay.Me for business transactions?
               </h2>
               <p className="text-lg">
-                Absolutely! TransWi offers solutions tailored for businesses.
-                You can manage your business finances, send and receive
-                payments, and access detailed transaction reports all from one
-                place.
+                Absolutely! pay.Me offers solutions tailored for businesses. You
+                can manage your business finances, send and receive payments,
+                and access detailed transaction reports all from one place.
               </p>
             </div>
             <div>
@@ -101,7 +98,7 @@ function FAQ() {
               </h2>
               <p className="text-lg">
                 You can contact our customer support team by emailing
-                support@transwi.com or calling 1-800-123-4567. We are here to
+                kam@noreply.never or calling 1-800-123-1111. We are here to
                 assist you with any questions or issues you may have.
               </p>
             </div>
@@ -111,13 +108,13 @@ function FAQ() {
 
       <footer className="bg-[#010813] text-white py-4">
         <div className="flex justify-center space-x-4">
-          <Link to="/privacy-policy" className="hover:text-green-400">
+          <Link to="/" className="hover:text-green-400">
             Privacy Policy
           </Link>
-          <Link to="/terms-of-service" className="hover:text-green-400">
+          <Link to="/" className="hover:text-green-400">
             Terms of Service
           </Link>
-          <Link to="/contact-us" className="hover:text-green-400">
+          <Link to="/" className="hover:text-green-400">
             Contact Us
           </Link>
         </div>

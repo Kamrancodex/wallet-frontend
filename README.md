@@ -145,7 +145,24 @@ Usage
   - **Real-time Exchange Rates**
     - Display real-time crypto exchange rates for accurate transactions.
 
+## Tech Stack
 
+- **Frontend**
+
+  - React.js
+  - Tailwind CSS
+  - Axios for API calls
+  - React Router for navigation
+  - React Toastify for notifications
+  - JWT for authentication
+
+- **Backend**
+  - Node.js
+  - Express.js
+  - MongoDB with Mongoose
+  - JWT for authentication
+  - Nodemailer for sending emails
+  - Axios for external API calls (e.g., exchange rates)
 
 ### Contributing We welcome
 
@@ -162,6 +179,9 @@ questions or suggestions, feel free to reach out: Email: najarkamran212@gmail.co
 
 i will be adding more features to this project i have many ideas like somehow incorporating crypto and pay with crypto feature
 
-````
+### Backend Github repo
 
-https://github.com/kamrancodex
+```
+https://github.com/Kamrancodex/wallet-backend
+```
+````

@@ -6,7 +6,7 @@ function AboutUs() {
     <div className="min-h-screen flex flex-col bg-gradient-to-r from-[#010813] via-[#010813] to-gray-900 text-white">
       <header className="bg-[#010813] text-white py-4 px-8 flex justify-between items-center">
         <div className="text-2xl font-bold text-green-400">
-          <Link to="/">TransWi</Link>
+          <Link to="/">pay.Me</Link>
         </div>
         <nav className="hidden md:flex space-x-6">
           <Link to="/sIGNUP" className="hover:text-green-400">
@@ -40,7 +40,7 @@ function AboutUs() {
         <div className="max-w-4xl text-center">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
           <p className="text-lg mb-8">
-            Welcome to TransWi, your trusted partner in seamless financial
+            Welcome to pay.Me, your trusted partner in seamless financial
             transactions. We are committed to providing you with the most
             secure, fast, and reliable money transfer services. Whether you are
             an individual looking to send money to loved ones or a business
@@ -56,7 +56,7 @@ function AboutUs() {
           </p>
           <h2 className="text-3xl font-semibold mb-4">Our Values</h2>
           <p className="text-lg mb-8">
-            At TransWi, we value:
+            At pay.Me, we value:
             <ul className="list-disc list-inside mt-2">
               <li>
                 Integrity: We adhere to the highest standards of integrity in
@@ -85,8 +85,8 @@ function AboutUs() {
             We are here to help. If you have any questions or need assistance,
             please don't hesitate to contact us:
             <ul className="list-none mt-2">
-              <li>Email: support@transwi.com</li>
-              <li>Phone: 1-800-123-4567</li>
+              <li>Email: kam@noreply.never</li>
+              <li>Phone: 1-800-123-1111</li>
               <li>Address: 123 Finance Street, Money City, 56789</li>
             </ul>
           </p>
@@ -95,13 +95,13 @@ function AboutUs() {
 
       <footer className="bg-[#010813] text-white py-4">
         <div className="flex justify-center space-x-4">
-          <Link to="/privacy-policy" className="hover:text-green-400">
+          <Link to="/" className="hover:text-green-400">
             Privacy Policy
           </Link>
-          <Link to="/terms-of-service" className="hover:text-green-400">
+          <Link to="/" className="hover:text-green-400">
             Terms of Service
           </Link>
-          <Link to="/contact-us" className="hover:text-green-400">
+          <Link to="/" className="hover:text-green-400">
             Contact Us
           </Link>
         </div>
