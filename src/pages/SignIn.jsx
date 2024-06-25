@@ -41,7 +41,7 @@ function SignIn() {
         } else {
           setTimeout(() => {
             navigate("/dashboard");
-          }, 100); // Add a slight delay to ensure token is set
+          }, 1000); // Add a slight delay to ensure token is set
         }
       } else {
         setErrorMessage(
