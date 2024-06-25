@@ -182,6 +182,7 @@ i will be adding more features to this project i have many ideas like somehow in
 ### Backend Github repo
 
 ```
-https://github.com/Kamrancodex/wallet-backend
+https://github.com/Kamrancodex/backend-wallet
 ```
+
 ````
