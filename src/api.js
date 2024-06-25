@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Define the base URL for your API
-const API_URL = "https://backend-wallet-gd8y.onrender.com/api/v1"; // Adjust this URL based on your backend URL
+const API_URL = "https://backend-wallet-v1xl.onrender.com/api/v1"; // Adjust this URL based on your backend URL
 
 // Create an Axios instance with the base URL and default headers
 const api = axios.create({
