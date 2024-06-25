@@ -15,8 +15,15 @@ import {
   updatePassword,
   uploadProfilePic,
 } from "../api"; // Import API functions
+import ToastNotification from "@/components/ToastNotification";
 
 function Profile() {
+  const messages = [
+    "If you are trying to add phone number and you are not recieving otp?",
+    "Its due to twillio free api ",
+    "it only allows otp service to the registered(used on signup of twillio)number thats mine",
+  ];
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalStep, setModalStep] = useState(1);
   const [modalField, setModalField] = useState("");
@@ -201,6 +208,7 @@ function Profile() {
 
   return (
     <div className="flex flex-col lg:flex-row min-h-screen bg-stone-100 lg:space-x-96">
+      <ToastNotification messages={messages} delay={3000} />
       <FullscreenLoader loading={loading} />
       <SideBar className="w-full lg:w-1/4" />
       <div className="flex-1 p-4 lg:p-8">

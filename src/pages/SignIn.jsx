@@ -3,8 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/InputField";
 import { signin } from "../api";
 import { useAuth } from "../contexts/AuthContext";
+import ToastNotification from "@/components/ToastNotification";
 
 function SignIn() {
+  const messages = [
+    "📧testEmail: najarkamran212@gmail.com",
+    "🔐password: Kam@1211",
+  ];
+
   const navigate = useNavigate();
   const { setIsAuthenticated } = useAuth();
 
@@ -61,6 +67,7 @@ function SignIn() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#010813] via-[#010813] to-gray-900">
       <div className="bg-white flex rounded-lg shadow-lg overflow-hidden sm:max-w-4xl w-full mx-6">
         <div className="w-full lg:w-1/2 p-8">
+          <ToastNotification messages={messages} delay={3000} />
           <h1 className="text-2xl font-bold text-center mb-4">Welcome Back</h1>
           {errorMessage && (
             <p className="text-l font-bold text-center mb-4 text-red-500">

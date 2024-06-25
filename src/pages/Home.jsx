@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden">
-      <ToastNotification messages={messages} delay={3000} />
+      <ToastNotification messages={messages} delay={7000} />
       <Header />
       <HeroSection />
       <Features />
