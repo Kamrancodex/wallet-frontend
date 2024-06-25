@@ -92,15 +92,7 @@ const App = () => (
           />
         }
       />
-      <Route
-        path="/verify"
-        element={
-          <ProtectedRoute
-            element={<Verify />}
-            isAuthenticated={isAuthenticated()}
-          />
-        }
-      />
+      <Route path="/verify" element=<Verify /> />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/coming-soon" element={<ComingSoon />} />
