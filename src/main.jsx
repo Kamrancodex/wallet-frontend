@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
@@ -40,95 +40,72 @@ const isAuthenticated = () => {
   }
 };
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/signup",
-    element: <SignUp />,
-  },
-  {
-    path: "/signin",
-    element: <SignIn />,
-  },
-  {
-    path: "/dashboard",
-    element: (
-      <ProtectedRoute
-        element={<Dashboard />}
-        isAuthenticated={isAuthenticated()}
+const App = () => (
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/signin" element={<SignIn />} />
+      <Route
+        path="/dashboard"
+        element={
+          <ProtectedRoute
+            element={<Dashboard />}
+            isAuthenticated={isAuthenticated()}
+          />
+        }
       />
-    ),
-  },
-  {
-    path: "/wallet",
-    element: (
-      <ProtectedRoute
-        element={<Wallet />}
-        isAuthenticated={isAuthenticated()}
+      <Route
+        path="/wallet"
+        element={
+          <ProtectedRoute
+            element={<Wallet />}
+            isAuthenticated={isAuthenticated()}
+          />
+        }
       />
-    ),
-  },
-  {
-    path: "/profile",
-    element: (
-      <ProtectedRoute
-        element={<Profile />}
-        isAuthenticated={isAuthenticated()}
+      <Route
+        path="/profile"
+        element={
+          <ProtectedRoute
+            element={<Profile />}
+            isAuthenticated={isAuthenticated()}
+          />
+        }
       />
-    ),
-  },
-  {
-    path: "/cards",
-    element: (
-      <ProtectedRoute element={<Cards />} isAuthenticated={isAuthenticated()} />
-    ),
-  },
-  {
-    path: "/transactions",
-    element: (
-      <ProtectedRoute
-        element={<Transactions />}
-        isAuthenticated={isAuthenticated()}
+      <Route
+        path="/cards"
+        element={
+          <ProtectedRoute
+            element={<Cards />}
+            isAuthenticated={isAuthenticated()}
+          />
+        }
       />
-    ),
-  },
-  {
-    path: "/about-us",
-    element: <AboutUs />,
-  },
-  {
-    path: "/faq",
-    element: <FAQ />,
-  },
-  {
-    path: "/coming-soon",
-    element: <ComingSoon />,
-  },
-  {
-    path: "/forgot-password",
-    element: <ForgotPassword />,
-  },
-  {
-    path: "/reset-password",
-    element: <ResetPassword />,
-  },
-  {
-    path: "/pay-request",
-    element: <PayRequest />,
-  },
-  {
-    path: "/not-authorized",
-    element: <NotAuthorized />,
-  },
-]);
+      <Route
+        path="/transactions"
+        element={
+          <ProtectedRoute
+            element={<Transactions />}
+            isAuthenticated={isAuthenticated()}
+          />
+        }
+      />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/faq" element={<FAQ />} />
+      <Route path="/coming-soon" element={<ComingSoon />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
+      <Route path="/pay-request" element={<PayRequest />} />
+      <Route path="/not-authorized" element={<NotAuthorized />} />
+    </Routes>
+  </HashRouter>
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AuthProvider>
-      <RouterProvider router={router} />
+      <App />
     </AuthProvider>
   </React.StrictMode>
 );
