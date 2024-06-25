@@ -1,10 +1,12 @@
 // src/components/ToastNotification.jsx
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import { useLocation } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
 const ToastNotification = ({ messages, delay }) => {
   const [displayedMessages, setDisplayedMessages] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
     const showMessage = (message, index) => {
@@ -18,6 +20,7 @@ const ToastNotification = ({ messages, delay }) => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
+            onClose: () => handleRemoveMessage(message),
           });
           setDisplayedMessages((prev) => [...prev, message]);
         }
@@ -28,6 +31,16 @@ const ToastNotification = ({ messages, delay }) => {
       showMessage(message, index);
     });
   }, [messages, delay, displayedMessages]);
+
+  useEffect(() => {
+    // Clear toasts when the location changes
+    toast.dismiss();
+    setDisplayedMessages([]);
+  }, [location]);
+
+  const handleRemoveMessage = (message) => {
+    setDisplayedMessages((prev) => prev.filter((msg) => msg !== message));
+  };
 
   return (
     <>
