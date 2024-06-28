@@ -13,7 +13,7 @@ const ToastNotification = ({ messages, delay }) => {
       setTimeout(() => {
         if (!displayedMessages.includes(message)) {
           toast(message, {
-            position: "bottom-right",
+            position: "bottom-left",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
