@@ -117,9 +117,10 @@ REACT_APP_API_URL=http://localhost:8000/api/v1
 3. **Start the development server:**
    bash Copy code
 
-````
+```
 
-npm run dev ```
+npm run dev
+```
 
 ### Usage
 
@@ -185,4 +186,4 @@ i will be adding more features to this project i have many ideas like somehow in
 https://github.com/Kamrancodex/backend-wallet
 ```
 
-````
+
