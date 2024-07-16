@@ -96,7 +96,7 @@ Welcome to the Wallet Management System! This project is a comprehensive web app
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/wallet-frontend.git
+   git clone https://github.com/kamrancodex/wallet-frontend.git
    cd wallet-management-system
    ```
    **Install dependencies:**
